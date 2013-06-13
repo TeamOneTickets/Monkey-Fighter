@@ -1,0 +1,24 @@
+{
+    "name": "teamonetickets/monkey-fighter",
+    "type": "library",
+    "description": "De-Grawlixes text strings so you can enjoy the full glory of swear words.",
+    "keywords": ["library", "Team One Tickets", "grawlix", "curse", "swear"],
+    "homepage": "https://github.com/TeamOneTickets/Monkey-Fighter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "J Cobb"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-0": { "MonkeyFighter": "library/" }
+    },
+    "support": {
+        "issues": "https://github.com/TeamOneTickets/Monkey-Fighter/issues",
+        "wiki": "https://github.com/TeamOneTickets/Monkey-Fighter/wiki",
+        "source": "https://github.com/TeamOneTickets/Monkey-Fighter"
+    }
+}
