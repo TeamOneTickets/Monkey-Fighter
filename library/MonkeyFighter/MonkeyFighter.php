@@ -57,16 +57,16 @@ class MonkeyFighter
      * @var array
      */
     protected $_replacements = array(
-        '/Mother****** with the Hat/iu'                     => 'Motherfucker with the Hat',
-        '/Mr. Muthaf**kin Exquire/iu'                       => 'Mr. Muthafuckin Exquire',
-        '/F*CK/u'                                           => 'FUCK',
-        '/F*ck/u'                                           => 'Fuck',
-        '/Starf**ker/iu'                                    => 'Starfucker',
-        '/Startf**ker/iu'                                   => 'Startfucker',
-        '/Hot Sh*t All Stars/iu'                            => 'Hot Shit All Stars',
-        '/F***ing Champs/iu'                                => 'Fucking Champs',
-        '/Goblin C*CK/iu'                                   => 'Goblin Cock',
-        '/F*cktard/iu'                                      => 'Fucktard',
+        '/Mother\*\*\*\*\*\* with the Hat/iu'               => 'Motherfucker with the Hat',
+        '/Mr\. Muthaf\*\*kin Exquire/iu'                    => 'Mr. Muthafuckin Exquire',
+        '/F\*CK/u'                                          => 'FUCK',
+        '/F\*ck/u'                                          => 'Fuck',
+        '/Starf\*\*ker/iu'                                  => 'Starfucker',
+        '/Startf\*\*ker/iu'                                 => 'Startfucker',
+        '/Hot Sh\*t All Stars/iu'                           => 'Hot Shit All Stars',
+        '/F\*\*\*ing Champs/iu'                             => 'Fucking Champs',
+        '/Goblin C\*CK/iu'                                  => 'Goblin Cock',
+        '/F\*cktard/iu'                                     => 'Fucktard',
     );
 
 
