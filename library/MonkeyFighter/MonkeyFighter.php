@@ -55,18 +55,57 @@ class MonkeyFighter
      * NOTE: Some of these are fairly common and are therefore commented out.
      *
      * @var array
+     * @lol http://www.youtube.com/watch?v=vbZhpf3sQxQ
      */
     protected $_replacements = array(
-        '/Mother\*\*\*\*\*\* with the Hat/iu'               => 'Motherfucker with the Hat',
-        '/Mr\. Muthaf\*\*kin Exquire/iu'                    => 'Mr. Muthafuckin Exquire',
-        '/F\*CK/u'                                          => 'FUCK',
-        '/F\*ck/u'                                          => 'Fuck',
-        '/Starf\*\*ker/iu'                                  => 'Starfucker',
-        '/Startf\*\*ker/iu'                                 => 'Startfucker',
-        '/Hot Sh\*t All Stars/iu'                           => 'Hot Shit All Stars',
-        '/F\*\*\*ing Champs/iu'                             => 'Fucking Champs',
-        '/Goblin C\*CK/iu'                                  => 'Goblin Cock',
-        '/F\*cktard/iu'                                     => 'Fucktard',
+        '/([Ss])[hit!@#$%&*-]{3}/'                      => '$1hit',
+        '/S[HIT!@#$%&*-]{3}/'                           => 'SHIT',
+
+        '/([Pp])[usy!@#$%&*-]{4}/'                      => '$1ussy',
+        '/P[USY!@#$%&*-]{4}/'                           => 'PUSSY',
+
+        '/([Pp])[is!@#$%&*-]{3}/'                       => '$1iss',
+        '/P[IS!@#$%&*-]{3}/'                            => 'PISS',
+
+        '/([Mm])[otherfuck!@#$%&*-]{11}/'               => '$1otherfucker',
+        '/F[OTHERFUCK!@#$%&*-]{11}/'                    => 'MOTHERFUCKER',
+
+        '/([Cc])[unt!@#$%&*-]{3}/'                      => '$1unt',
+        '/C[UNT!@#$%&*-]{3}/'                           => 'CUNT',
+
+        '/([Cc])[ock!@#$%&*-]{3}/'                      => '$1ock',
+        '/C[OCK!@#$%&*-]{3}/'                           => 'COCK',
+
+        '/([Dd])[amn!@#$%&*-]{3}/'                      => '$1amn',
+        '/D[AMN!@#$%&*-]{3}/'                           => 'DAMN',
+
+        '/([Aa])[s!@#$%&*-]{2}/'                        => '$1ss',
+        '/A[S!@#$%&*-]{2}/'                             => 'ASS',
+
+        '/([Bb])[itch!@#$%&*-]{4}/'                     => '$1amn',
+        '/B[ITCH!@#$%&*-]{4}/'                          => 'BITCH',
+
+        '/([Tt])[ity!@#$%&*-]{4}/'                      => '$1itty',
+        '/T[ITY!@#$%&*-]{4}/'                           => 'TITTY',
+
+        '/([Tt])[it!@#$%&*-]{2}(s)?/'                   => '$1it$2',
+        '/T[IT!@#$%&*-]{2}(S)?/'                        => 'TIT$1',
+
+        '/([Nn])[iger!@#$%&*-]{5}/'                     => '$1igger',
+        '/N[IGER!@#$%&*-]{5}/'                          => 'NIGGER',
+
+        '/([Nn])[iga!@#$%&*-]{4}(h)?/'                  => '$1igga$2',
+        '/N[IGA!@#$%&*-]{4}(H)?/'                       => 'NIGGA$1',
+
+        '/([Ff])[agot!@#$%&*-]{5}/'                     => '$1aggot',
+        '/F[AGOT!@#$%&*-]{5}/'                          => 'FAGGOT',
+
+        '/([Ff])[uck!@#$%&*-]{3}/'                      => '$1uck',
+        '/F[UCK!@#$%&*-]{3}/'                           => 'FUCK',
+
+        '/([Ff])[ag!@#$%&*-]{2}/'                       => '$1ag',
+        '/F[AG!@#$%&*-]{2}/'                            => 'FAG$1',
+
     );
 
 
@@ -74,7 +113,7 @@ class MonkeyFighter
      * Constructor
      *
      * @param string $original    An array of field default values
-     * @param array  $replacements    An array that is used for the preg_replace() PHP-function in the slug generation process
+     * @param array  $replacements    An array that is used for the preg_replace() PHP-function
      */
     public function __construct($original, $replacements = null)
     {
