@@ -13,8 +13,15 @@
     "require": {
         "php": ">=5.4.0"
     },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*",
+        "squizlabs/php_codesniffer": "1.*"
+    },
     "autoload": {
         "psr-0": { "MonkeyFighter": "library/" }
+    },
+    "config": {
+        "bin-dir": "bin"
     },
     "support": {
         "issues": "https://github.com/TeamOneTickets/Monkey-Fighter/issues",
