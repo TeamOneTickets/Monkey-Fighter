@@ -53,6 +53,11 @@ class MonkeyFighterTest extends \PHPUnit_Framework_TestCase
         assertEquals('Fucktard', $dirty);
 
 
+        $monkeyFighter = new MonkeyFighter('Dane Cook Elizabeth Cook DC 101 Chili Cook-Off Bethune Cookman Wildcats Baseball');
+        $dirty = $monkeyFighter->getVulgarized();
+        assertEquals('Dane Cook Elizabeth Cook DC 101 Chili Cook-Off Bethune Cookman Wildcats Baseball', $dirty);
+
+
     }
 
 
